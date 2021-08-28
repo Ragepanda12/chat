@@ -26,3 +26,9 @@ If you want to host this yourself, check out this guide I used which explains ho
 This was mostly made using the guide here: https://www.youtube.com/watch?v=zQyrwxMPm88 although it seem that the guide is using firebase 8 which has quite a different API to the latest version.
 
 I've replaced the logic of getting and settting to and from the firestore with more modern APIs.
+
+And as is usual with any npm based apps:
+```
+npm install
+npm start
+```
