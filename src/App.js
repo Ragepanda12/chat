@@ -8,8 +8,6 @@ import SignIn from "./components/SignIn";
 import SignOut from "./components/SignOut";
 import "./App.css";
 
-console.log("@@env", process.env.REACT_APP_API_KEY);
-
 initializeApp({
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
