@@ -12,6 +12,17 @@ REACT_APP_APP_ID=*************
 REACT_APP_MEASUREMENT_ID=*************
 ```
 
+You'll also need to set up firestore https://firebase.google.com/docs/firestore/quickstart with a collection called "Messages". The format of a Message doc is
+```
+{
+  message: "your message text",
+  createdAt: 123412513513,
+  uid: "Your google user id",
+  photoURL: "https://your-photo-url-here.com"
+}
+```
+If you want to host this yourself, check out this guide I used which explains how you can use Firebase to host for free: https://javascript.plainenglish.io/hosting-your-react-js-and-node-js-apps-for-free-with-firebase-6dc670564aca
+
 This was mostly made using the guide here: https://www.youtube.com/watch?v=zQyrwxMPm88 although it seem that the guide is using firebase 8 which has quite a different API to the latest version.
 
 I've replaced the logic of getting and settting to and from the firestore with more modern APIs.
